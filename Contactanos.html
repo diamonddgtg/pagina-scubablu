@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Contactanos</title>
+	<meta charset="utf-8">
+	<link rel="icon" type="imagen/png" href="imagen/1f48e.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+	<style type="text/css">
+		*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+body{
+	background: #88B8D0;
+}
+
+.principal{
+	width: 850px;
+	height: 1035px;
+	background: #1273A3;
+	margin: 0px 100px;
+	padding: 0px 10px;
+}
+.contenido{
+	background:#BCE1F4;
+	width: 830px;
+	height: 83%;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+.contenido:after{
+	content: '';
+	position: absolute;
+	left: -600%;
+	width: 1300%;
+	padding-bottom: 6350%;
+	top: 90%;
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px #665599;
+	background: #1273A3;
+	border: solid #000;
+}
+z-indez:-1;
+
+ul {
+	list-style: none;
+}
+ol li{
+	float: left;
+}
+ol li a{
+	display: block;
+	text-decoration: none;
+	color: #000; 
+	margin: 25px;
+	font-size: 14px;
+	font-family: Georgia,sans-serif;
+}
+ol li a:hover,
+ol li a.activo{
+	color: #7dc1eb;
+}
+ol li a i{
+	margin-right: 8px;
+}
+.cajaf{
+	width: 600px;
+	height: 700px;
+	float: right;
+}
+form{
+	width: 80%;
+	padding: 20px;
+	margin: 20px 15px 40px;
+	border: 1px solid #1273A3;
+	border-radius: 10px;
+}
+label{
+	font-size: 14px;
+	margin: 0px 20px;
+	display: block;
+	width: 100%;
+	font-family: 'Oswald', sans-serif;
+}
+textarea{
+    resize: vertical;
+    min-height: 150px;
+    max-height: 300px;
+}
+.dd{
+    margin-bottom: 20px;
+    width: 80%;
+    margin: 20px;
+    padding: 5px 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+.dd:focus{
+	background-color: #8ECCE3;
+ 	border-color:blue;
+ 	box-shadow: 0px 0px 10px blue;
+}
+.boton{
+	margin-bottom:0px;
+    background:#1668c4;
+    border: none;
+    margin: 0px 20px;
+    width: 80px;
+    height: 40px;
+    color: #fff;
+}
+
+}
+.boton:hover{
+    background: #70E8E2;
+    cursor: pointer;
+}
+.boton[type="submit"]:hover{
+    background: #70E8E2;
+    color: #000;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+	</style>
+</head>
+<body>
+	<div class="principal">
+	<img src="imagen/hb.jpg" width="830px" height="160px">
+	<div class="contenido">
+		    <ol>
+				<li>
+					<a href="Index.html"><i class="fas fa-home"></i>INICIO</a>
+					<a href="Destinos.html"><i class="fas fa-plane"></i>DESTINOS</a>
+					<a href="Paquetes.html"><i class="fas fa-box-open"></i> PAQUETES</a>
+					<a href="Contactanos.html" class="activo"><i class="far fa-id-card"></i> CONTÁCTANOS</a>
+				</li>
+			</ol>
+			<div class="cajaf">
+				<form>
+					<label for="Nombre">Nombre Completo:</label>
+					<input type="text" class="dd" name="" placeholder="Nombre Completo">
+					<label for="Email">Tu E-mail</label>
+					<input type="Email" class="dd" name="email" placeholder="diamond@yahoo.com">
+					<label for="Asunto" id="mensaje">Asunto:</label>
+					<input type="text" class="dd" name="Asunto">
+					<label for="Mensaje" id="Mensaje">Mensaje:</label>
+					<textarea name="textarea" class="dd"></textarea>
+					<input type="submit" name="" value="Enviar" class="boton">
+				</form>
+			</div>
+	</div>		
+	<script src="https://kit.fontawesome.com/2a6a46073d.js" crossorigin="anonymous"></script>
+</body>
+</html>
